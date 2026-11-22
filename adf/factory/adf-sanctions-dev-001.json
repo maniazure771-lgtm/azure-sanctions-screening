@@ -1,0 +1,16 @@
+{
+	"name": "adf-sanctions-dev-001",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ca31fc69-e70f-4635-a003-12b3e9ff54cc",
+		"tenantId": "8442b7de-ee91-4700-9402-9716ffbcfc08"
+	}
+}

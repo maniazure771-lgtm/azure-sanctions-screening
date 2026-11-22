@@ -1,0 +1,25 @@
+{
+	"name": "TR_Sanctions_File_Arrival",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_Sanctions_Screening",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/landing/blobs/sanctions_screening/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/7d80372e-b008-4555-b7a9-2adfcfccca1f/resourceGroups/rg-sanctions-screening-dev/providers/Microsoft.Storage/storageAccounts/stsanctionsdev001",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
